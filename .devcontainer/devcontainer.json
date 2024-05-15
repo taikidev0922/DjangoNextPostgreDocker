@@ -1,0 +1,15 @@
+{
+  "name": "Django DevContainer",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "web",
+  "workspaceFolder": "/app",
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+  "remoteUser": "root"
+}
